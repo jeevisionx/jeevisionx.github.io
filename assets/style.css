@@ -1,0 +1,28 @@
+:root { --ink:#1B1B2F; --sub:#4A4A63; --head:#7C00FF; --good:#0B8A42; --panel:#F5F5FA;
+  --line:#D8D8E4; --gold:#C9A227; --bg:#FFFFFF; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 "Open Sans", system-ui, sans-serif; }
+a { color:var(--head); }
+.wrap { max-width:880px; margin:0 auto; padding:0 16px; }
+header { border-bottom:3px solid var(--head); }
+header .wrap { display:flex; align-items:center; gap:14px; padding-top:14px; padding-bottom:14px; }
+header img { width:56px; height:56px; }
+header .brand { font:700 22px/1.1 Montserrat, sans-serif; color:var(--head); text-decoration:none; }
+header .tag { font:600 13px Montserrat, sans-serif; color:var(--sub); }
+nav.crumbs { font-size:14px; color:var(--sub); margin:18px 0 0; }
+h1 { font:700 30px/1.25 Montserrat, sans-serif; color:var(--head); margin:18px 0 6px; }
+h2 { font:700 21px/1.3 Montserrat, sans-serif; color:var(--ink); margin:0 0 6px; }
+p.lead { font-size:17px; color:var(--sub); margin:0 0 22px; }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:18px 20px; margin:0 0 16px; }
+.card h2 a { color:var(--ink); text-decoration:none; }
+.card p { margin:0 0 12px; }
+.meta { font-size:14px; color:var(--sub); }
+.btns { display:flex; flex-wrap:wrap; gap:10px; }
+.btn { display:inline-block; padding:9px 16px; border-radius:8px; font:600 15px Montserrat, sans-serif;
+  text-decoration:none; border:2px solid var(--head); }
+.btn.pdf { background:var(--head); color:#fff; }
+.btn.yt { background:#fff; color:var(--head); }
+ul.chapters { list-style:none; padding:0; margin:0; }
+ul.chapters li { margin:4px 0; }
+footer { border-top:1px solid var(--line); margin-top:36px; padding:18px 0 28px; font-size:14px; color:var(--sub); }
+@media (max-width:520px) { h1 { font-size:25px; } header img { width:46px; height:46px; } }

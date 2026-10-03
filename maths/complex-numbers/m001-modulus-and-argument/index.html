@@ -36,9 +36,9 @@
 </head>
 <body>
 <header class="site-header"><div class="wrap">
-<a target="_blank" rel="noopener" class="brand-link" href="/"><img src="/assets/logo-192.png" width="48" height="48" alt="JEEVisionX logo">
-<span><span class="brand-name">JEEVisionX</span><br><span class="brand-tag">Don&#x27;t Memorize. Visualize.</span></span></a>
-<nav class="main-nav" aria-label="Main"><a target="_blank" rel="noopener" href="/">Home</a><a target="_blank" rel="noopener" href="/maths/complex-numbers/" aria-current="page">Notes</a><a target="_blank" rel="noopener" href="/about/">About</a></nav>
+<a class="brand-link" href="/"><img src="/assets/logo-192.png" width="48" height="48" alt="JEEVisionX logo">
+<span class="brand-text"><span class="brand-name">JEEVisionX</span><span class="brand-tag">Don&#x27;t Memorize. Visualize.</span></span></a>
+<nav class="main-nav" aria-label="Main"><a href="/">Home</a><a href="/maths/complex-numbers/" aria-current="page">Notes</a><a href="/about/">About</a></nav>
 <div class="social">
 <a target="_blank" rel="noopener" href="https://www.youtube.com/@JEEVisionX" aria-label="JEEVisionX on YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1.5" y="5" width="21" height="14" rx="4" fill="#FF0000"/><path d="M10 9.2v5.6l4.8-2.8z" fill="#fff"/></svg><span class="label">YouTube</span></a>
 <a target="_blank" rel="noopener" href="https://www.instagram.com/jeevisionx/" aria-label="JEEVisionX on Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="ig1" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#F58529"/><stop offset=".5" stop-color="#DD2A7B"/><stop offset="1" stop-color="#8134AF"/></linearGradient></defs><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="url(#ig1)" stroke-width="2"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="url(#ig1)" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="#DD2A7B"/></svg><span class="label">Instagram</span></a>
@@ -47,7 +47,7 @@
 </div></header>
 <main>
 <div class="page-head"><div class="wrap narrow">
-<nav class="crumbs" aria-label="Breadcrumb"><a target="_blank" rel="noopener" href="/">Home</a><span aria-hidden="true">/</span><a target="_blank" rel="noopener" href="/maths/">Mathematics</a><span aria-hidden="true">/</span><a target="_blank" rel="noopener" href="/maths/complex-numbers/">Complex Numbers</a><span aria-hidden="true">/</span><span aria-current="page">Modulus and Argument of a Complex Number</span></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/maths/">Mathematics</a><span aria-hidden="true">/</span><a href="/maths/complex-numbers/">Complex Numbers</a><span aria-hidden="true">/</span><span aria-current="page">Modulus and Argument of a Complex Number</span></nav>
 <div class="lesson-meta"><span class="chip">Mathematics</span><span class="chip">Complex Numbers</span><span class="chip">JEE Main and Advanced</span></div>
 <h1>Modulus and Argument of a Complex Number</h1>
 <p class="lead">A complex number is a point, and also an arrow from the origin. Its modulus is how long the arrow is. Its argument is which way the arrow points.</p>
@@ -78,13 +78,14 @@ and its direction.</p>
 <p>The argument \(\arg z\) is the angle from the positive real axis to the arrow. Anticlockwise
 turns count as positive and clockwise turns as negative. For \(3 + 4i\),
 \(\tan\theta = \dfrac{4}{3}\), so \(\theta = \tan^{-1}\left(\dfrac{4}{3}\right) \approx 0.9273\)
-radians, which is about \(53.13^\circ\).</p>
+radians, which is about \(53.13^\circ\). For \(z = 0\) there is no arrow, so \(\arg 0\) is not
+defined.</p>
 
 <h3>The principal argument</h3>
 <p>The same arrow can be reached by turning anticlockwise or clockwise, and by adding full turns of
 \(2\pi\), so one arrow has many angles. We agree to report one of them, the principal argument,
-which lies in \((-\pi, \pi]\): from \(0\) up to \(\pi\) for an arrow above the real axis, and from
-\(0\) down to (but not reaching) \(-\pi\) for an arrow below it. The shorter turn wins.</p>
+which lies in \((-\pi, \pi]\): between \(0\) and \(\pi\) for an arrow above the real axis, and
+between \(-\pi\) and \(0\) for an arrow below it. The shorter turn wins.</p>
 <p>On the negative real axis the two turns are equally long, \(\pi\) anticlockwise and \(\pi\)
 clockwise. The agreement settles the tie in favour of the anticlockwise turn, so
 \(\arg(-2) = \pi\), never \(-\pi\).</p>
@@ -95,7 +96,9 @@ clockwise. The agreement settles the tie in favour of the anticlockwise turn, so
 <h2>Finding the argument in any quadrant</h2>
 <p>Work in two steps. First find the acute angle the arrow makes with the real axis,
 \(\alpha = \tan^{-1}\left|\dfrac{y}{x}\right|\). Then read the argument from the quadrant the point
-is in.</p>
+is in. A point on an axis is in no quadrant, so read its argument straight from the picture: \(0\) on
+the positive real axis, \(\pi\) on the negative real axis, \(\dfrac{\pi}{2}\) on the imaginary axis
+above the origin and \(-\dfrac{\pi}{2}\) below it.</p>
 <figure><img src="fig2-quadrants.webp" width="960" height="932" loading="lazy" alt="The argument in each quadrant: alpha, pi minus alpha, minus (pi minus alpha) and minus alpha"></figure>
 <div class="box formula">
 <h3>Formulas to remember</h3>
@@ -195,10 +198,10 @@ bottom by \(1 + i\): \(\dfrac{(1 + i)^2}{(1 - i)(1 + i)} = \dfrac{2i}{2} = i\), 
 <div><div class="fbrand">JEEVisionX</div>
 <p>Animated lessons and free notes for JEE Main and JEE Advanced. One idea at a time, shown on screen
 until it makes sense.</p></div>
-<div><h3>Explore</h3><ul><li><a target="_blank" rel="noopener" href="/">Home</a></li><li><a target="_blank" rel="noopener" href="/maths/">Mathematics</a></li>
-<li><a target="_blank" rel="noopener" href="/maths/complex-numbers/">Complex Numbers</a></li><li><a target="_blank" rel="noopener" href="/about/">About</a></li></ul></div>
+<div><h3>Explore</h3><ul><li><a href="/">Home</a></li><li><a href="/maths/">Mathematics</a></li>
+<li><a href="/maths/complex-numbers/">Complex Numbers</a></li><li><a href="/about/">About</a></li></ul></div>
 <div><h3>Follow</h3><ul><li><a target="_blank" rel="noopener" href="https://www.youtube.com/@JEEVisionX">YouTube</a></li><li><a target="_blank" rel="noopener" href="https://www.instagram.com/jeevisionx/">Instagram</a></li>
-<li><a target="_blank" rel="noopener" href="mailto:jeevisionx@gmail.com">jeevisionx@gmail.com</a></li></ul></div>
+<li><a href="mailto:jeevisionx@gmail.com">jeevisionx@gmail.com</a></li></ul></div>
 </div>
 <div class="copy">&copy; 2026 JEEVisionX. Notes are free to read, download and share with students.</div>
 </div></footer>

@@ -47,6 +47,10 @@ p { margin:0 0 14px; }
   font:700 15px "Open Sans", sans-serif; text-decoration:none; border:2px solid var(--head); transition:transform .15s, box-shadow .15s; }
 .btn:hover { transform:translateY(-1px); box-shadow:0 6px 16px rgba(124,0,255,.18); }
 .btn svg { width:18px; height:18px; }
+.short-list { list-style:none; padding:0; margin:14px 0 0; }
+.short-list li { margin:10px 0; }
+.short-list a { display:inline-flex; align-items:center; gap:8px; font-weight:600; }
+.short-list svg { width:18px; height:18px; flex:none; color:var(--head); }
 .btn.primary { background:var(--head); color:#fff; }
 .btn.primary:hover { background:var(--head-d); color:#fff; }
 .btn.ghost { background:#fff; color:var(--head); }

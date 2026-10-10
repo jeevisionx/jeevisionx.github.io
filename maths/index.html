@@ -47,7 +47,7 @@
 <h1>Mathematics</h1>
 <p class="lead">Free notes and animated lessons, chapter by chapter.</p>
 </div></div>
-<section class="block"><div class="wrap"><div class="grid two"><a class="card chapter-card" href="/maths/complex-numbers/"><span class="chip">Mathematics</span><span class="chip">2 lessons</span><h3 style="margin-top:12px">Complex Numbers</h3><p class="muted" style="margin:0">Complex numbers drawn on the Argand plane: modulus, argument, rotation and locus, one idea per lesson.</p></a></div></div></section>
+<section class="block"><div class="wrap"><div class="grid two"><a class="card chapter-card" href="/maths/complex-numbers/"><span class="chip">Mathematics</span><span class="chip" data-until="2026-10-11T17:00:00+05:30">First lesson on 11 October</span><span class="chip" data-from="2026-10-11T17:00:00+05:30" data-until="2026-10-14T17:00:00+05:30" hidden>1 lesson</span><span class="chip" data-from="2026-10-14T17:00:00+05:30" hidden>2 lessons</span><h3 style="margin-top:12px">Complex Numbers</h3><p class="muted" style="margin:0">Complex numbers drawn on the Argand plane: modulus, argument, rotation and locus, one idea per lesson.</p></a></div></div></section>
 </main>
 <footer class="site-footer"><div class="wrap">
 <div class="cols">
@@ -61,6 +61,15 @@ until it makes sense.</p></div>
 </div>
 <div class="copy">&copy; 2026 JEEVisionX. Notes are free to read, download and share with students.</div>
 </div></footer>
+<script>
+(function () {
+  var now = Date.now();
+  document.querySelectorAll("[data-from],[data-until]").forEach(function (el) {
+    var f = el.getAttribute("data-from"), u = el.getAttribute("data-until");
+    el.hidden = !((!f || now >= Date.parse(f)) && (!u || now < Date.parse(u)));
+  });
+})();
+</script>
 <div class="toast" id="toast" role="status">Link copied</div>
 <script>
 document.querySelectorAll("[data-share]").forEach((b) => b.addEventListener("click", async () => {

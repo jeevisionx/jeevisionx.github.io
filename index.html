@@ -52,8 +52,10 @@ practice set with answers. Free to read and download, with no sign up.</p>
 <div class="btns"><a class="btn primary" href="/maths/complex-numbers/">Browse the notes</a>
 <a target="_blank" rel="noopener" class="btn ghost" href="https://www.youtube.com/@JEEVisionX"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1.5" y="5" width="21" height="14" rx="4" fill="#FF0000"/><path d="M10 9.2v5.6l4.8-2.8z" fill="#fff"/></svg>Watch on YouTube</a></div>
 </div>
-<figure class="hero-card"><a href="/maths/complex-numbers/m001-modulus-and-argument/"><img src="/maths/complex-numbers/m001-modulus-and-argument/fig1-arrow.webp" width="960" height="996" alt="The arrow from the origin to the point (3, 4): its length is 5 and theta is its angle with the real axis"></a>
-<figcaption>From the lesson: Modulus and Argument of a Complex Number</figcaption></figure>
+<figure class="hero-card"><div data-from="2026-10-11T17:00:00+05:30" hidden><a href="/maths/complex-numbers/m001-modulus-and-argument/"><img src="/maths/complex-numbers/m001-modulus-and-argument/fig1-arrow.webp" width="960" height="996" alt="The arrow from the origin to the point (3, 4): its length is 5 and theta is its angle with the real axis"></a>
+<figcaption>From the lesson: Modulus and Argument of a Complex Number</figcaption></div>
+<div data-until="2026-10-11T17:00:00+05:30"><img src="/maths/complex-numbers/m001-modulus-and-argument/fig1-arrow.webp" width="960" height="996" alt="The arrow from the origin to the point (3, 4): its length is 5 and theta is its angle with the real axis">
+<figcaption>From the first lesson, coming on Sunday, 11 October at 5 PM IST</figcaption></div></figure>
 </div></section>
 <section class="block"><div class="wrap">
 <h2>How a lesson works</h2>
@@ -65,7 +67,7 @@ practice set with answers. Free to read and download, with no sign up.</p>
 <section class="block alt"><div class="wrap">
 <h2>Free notes by chapter</h2>
 <p class="muted">Mathematics comes first, chapter by chapter. Physics and Chemistry will follow.</p>
-<div class="grid two" style="margin-top:18px"><a class="card chapter-card" href="/maths/complex-numbers/"><span class="chip">Mathematics</span><span class="chip">2 lessons</span><h3 style="margin-top:12px">Complex Numbers</h3><p class="muted" style="margin:0">Complex numbers drawn on the Argand plane: modulus, argument, rotation and locus, one idea per lesson.</p></a></div>
+<div class="grid two" style="margin-top:18px"><a class="card chapter-card" href="/maths/complex-numbers/"><span class="chip">Mathematics</span><span class="chip" data-until="2026-10-11T17:00:00+05:30">First lesson on 11 October</span><span class="chip" data-from="2026-10-11T17:00:00+05:30" data-until="2026-10-14T17:00:00+05:30" hidden>1 lesson</span><span class="chip" data-from="2026-10-14T17:00:00+05:30" hidden>2 lessons</span><h3 style="margin-top:12px">Complex Numbers</h3><p class="muted" style="margin:0">Complex numbers drawn on the Argand plane: modulus, argument, rotation and locus, one idea per lesson.</p></a></div>
 </div></section>
 <section class="block"><div class="wrap">
 <div class="card notify">
@@ -86,6 +88,15 @@ until it makes sense.</p></div>
 </div>
 <div class="copy">&copy; 2026 JEEVisionX. Notes are free to read, download and share with students.</div>
 </div></footer>
+<script>
+(function () {
+  var now = Date.now();
+  document.querySelectorAll("[data-from],[data-until]").forEach(function (el) {
+    var f = el.getAttribute("data-from"), u = el.getAttribute("data-until");
+    el.hidden = !((!f || now >= Date.parse(f)) && (!u || now < Date.parse(u)));
+  });
+})();
+</script>
 <div class="toast" id="toast" role="status">Link copied</div>
 <script>
 document.querySelectorAll("[data-share]").forEach((b) => b.addEventListener("click", async () => {

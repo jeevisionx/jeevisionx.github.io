@@ -6,7 +6,7 @@
 <title>Modulus and Argument of a Complex Number: Free Notes | JEEVisionX</title>
 <meta name="description" content="A complex number is a point, and also an arrow from the origin. Its modulus is how long the arrow is. Its argument is which way the arrow points.">
 <link rel="canonical" href="https://www.jeevisionx.com/maths/complex-numbers/m001-modulus-and-argument/">
-<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="robots" content="noindex">
 <meta name="theme-color" content="#7C00FF">
 <meta property="og:site_name" content="JEEVisionX">
 <meta property="og:type" content="article">
@@ -189,7 +189,7 @@ bottom by \(1 + i\): \(\dfrac{(1 + i)^2}{(1 - i)(1 + i)} = \dfrac{2i}{2} = i\), 
 <h2>Keep these notes</h2>
 <p class="muted">The same notes as a printable PDF, with the practice set and answers.</p>
 <div class="btns"><a target="_blank" rel="noopener" class="btn primary" href="/maths/complex-numbers/m001-modulus-and-argument.pdf"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download the PDF</a><a target="_blank" rel="noopener" class="btn ghost" href="https://www.youtube.com/@JEEVisionX"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>Watch on YouTube</a><button type="button" class="btn ghost" data-share><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="M8.3 10.8l7.4-4.4M8.3 13.2l7.4 4.4"/></svg>Share</button></div>
-<div class="btns"><a class="btn ghost small" href="/maths/complex-numbers/m002-multiplication-as-rotation/">Next: Multiplication of Complex Numbers as Rotation</a></div>
+<div class="btns"><a class="btn ghost small" href="/maths/complex-numbers/m002-multiplication-as-rotation/" data-from="2026-10-14T17:00:00+05:30" hidden>Next: Multiplication of Complex Numbers as Rotation</a></div>
 </div>
 </div>
 </main>
@@ -205,6 +205,15 @@ until it makes sense.</p></div>
 </div>
 <div class="copy">&copy; 2026 JEEVisionX. Notes are free to read, download and share with students.</div>
 </div></footer>
+<script>
+(function () {
+  var now = Date.now();
+  document.querySelectorAll("[data-from],[data-until]").forEach(function (el) {
+    var f = el.getAttribute("data-from"), u = el.getAttribute("data-until");
+    el.hidden = !((!f || now >= Date.parse(f)) && (!u || now < Date.parse(u)));
+  });
+})();
+</script>
 <div class="toast" id="toast" role="status">Link copied</div>
 <script>
 document.querySelectorAll("[data-share]").forEach((b) => b.addEventListener("click", async () => {

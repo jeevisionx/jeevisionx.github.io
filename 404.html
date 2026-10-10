@@ -54,6 +54,15 @@ until it makes sense.</p></div>
 </div>
 <div class="copy">&copy; 2026 JEEVisionX. Notes are free to read, download and share with students.</div>
 </div></footer>
+<script>
+(function () {
+  var now = Date.now();
+  document.querySelectorAll("[data-from],[data-until]").forEach(function (el) {
+    var f = el.getAttribute("data-from"), u = el.getAttribute("data-until");
+    el.hidden = !((!f || now >= Date.parse(f)) && (!u || now < Date.parse(u)));
+  });
+})();
+</script>
 <div class="toast" id="toast" role="status">Link copied</div>
 <script>
 document.querySelectorAll("[data-share]").forEach((b) => b.addEventListener("click", async () => {

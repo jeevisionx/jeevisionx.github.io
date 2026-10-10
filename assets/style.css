@@ -139,6 +139,14 @@ ul.for-list li { margin:0 0 10px; }
 .site-footer .fbrand { font:800 22px Montserrat, sans-serif; color:#fff; }
 .site-footer .copy { border-top:1px solid #34344F; margin-top:30px; padding-top:16px; font-size:13px; color:#9A9AB5; }
 
+[hidden] { display:none !important; }
+.lesson-card.locked { background:var(--panel); box-shadow:none; }
+.lesson-card.locked .thumb { position:relative; overflow:hidden; }
+.lesson-card.locked .thumb img { filter:grayscale(1) blur(3px); opacity:.45; }
+.lock-badge { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
+.lock-badge svg { width:56px; height:56px; color:var(--head); }
+.coming { display:flex; align-items:center; gap:8px; font-weight:700; color:var(--head); margin:0 0 8px; }
+.coming svg { width:20px; height:20px; flex:none; }
 .toast { position:fixed; left:50%; bottom:24px; transform:translateX(-50%); background:var(--ink); color:#fff;
   padding:10px 16px; border-radius:8px; font-size:14px; opacity:0; transition:opacity .2s; pointer-events:none; z-index:20; }
 .toast.on { opacity:1; }
